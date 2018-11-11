@@ -6,6 +6,7 @@ import NavBarList from './components/NavBar';
 //@MOCKS
 import Header from './components/Header';
 import { NavBarItems } from './mocks/NavBarItems';
+import Article from './components/Article'
 
 class App extends Component {
   render() {
@@ -19,7 +20,7 @@ class App extends Component {
                   navListItems={NavBarItems}
               />
           </Header>
-
+          <Article/>
       </div>
     );
   }
