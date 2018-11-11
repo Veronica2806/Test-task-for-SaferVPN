@@ -2,9 +2,9 @@ import React  from 'react';
 import PropTypes from 'prop-types';
 
 const ArticleTitle = (props) => (
-    <div>
-        <h2>{props.title}</h2>
-    </div>
+
+        <h1>{props.title}</h1>
+
 );
 
 ArticleTitle.propTypes = {

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import ArticleText from './ArticleText';
 import ArticleTitle from './ArticleTitle';
 import Button from '../Button';
@@ -14,11 +13,11 @@ class Article extends Component {
                 title="automatic wi-fi security"
                 />
                 <ArticleText
-                text="mymymymmymymymyymymymmymymymyymymymymyymymymyymymymyymymymymymymm"
+                text="test"
                 />
                 <Button title="start now" status={true}/>
                 <Button title="request demo" status={true}/>
-                <ArticleImage src="images/1.jpg"/>
+                <ArticleImage src="images/logo.png"/>
 
             </div>
         )

@@ -2,9 +2,8 @@ import React  from 'react';
 import PropTypes from 'prop-types';
 
 const ArticleText = (props) => (
-    <div>
+
         <p>{props.text}</p>
-    </div>
 );
 
 ArticleText.propTypes = {

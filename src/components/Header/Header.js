@@ -10,8 +10,8 @@ class Header extends Component {
         return (
             <div className={className}>
                 <div>
-                    <a href={"#"}>
-                        <img src={"images/logo.png"} alt={""}/>
+                    <a href="#">
+                        <img src={"images/logo.png"} alt="test"/>
                         perimeter 81
                     </a>
                 </div>

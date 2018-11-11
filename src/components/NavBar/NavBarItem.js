@@ -2,9 +2,9 @@ import React  from 'react';
 import PropTypes from 'prop-types';
 
 const NavBarItem = (props) => (
-    <div id={props.id}>
+    <li id={props.id}>
         <a href={props.href}>{props.title}</a>
-    </div>
+    </li>
 );
 
 NavBarItem.propTypes = {
