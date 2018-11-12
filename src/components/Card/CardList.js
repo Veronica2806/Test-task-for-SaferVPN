@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import CardItem from './CardItem';
+import './Card.scss';
 class CardList extends Component {
 
     static propTypes = {

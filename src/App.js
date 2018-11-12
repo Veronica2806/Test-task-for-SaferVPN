@@ -19,6 +19,7 @@ class App extends Component {
               />
           </Header>
           <Article/>
+
           <CardList
               className="card-list"
               cardItem={CardItems}
