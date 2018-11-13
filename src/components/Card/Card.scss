@@ -1,34 +1,44 @@
-
 .card-list{
-
+	
   ul{
-	padding: 0;
-    list-style: none;
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	  
+    justify-content: space-around;
+    margin: auto;
+    padding:5em;
+	list-style: none;
 	  
 
     li{
-		text-align: center;
-		width: 20%;
-		min-height: 300px;
-		box-shadow: 0px 0px 15px lightgray;
-		padding: 30px;
-		background-color: white;
 		
+		background-color: #fff;
+		border-radius: .3rem;
+		box-shadow: 0 1rem 3rem 0 rgba(96,111,148,.2);
+		padding:3em;
+		width: 250px;
+		display: flex;
+		flex-direction: column;
+	
 		
-		
-		h1{
-			text-align: left;
-			font-size: 25px;
-		}
-		p{
-			text-align: left;
+			p{
+				color: #536283;
+				font: normal 16px "Open Sans";
+				line-height: 26px;
+			}
+			h1{
+				font: bolder 21px "Arial Black";
+				color: #3a5ba2;
+				line-height: 31px;
+				
+			}
 			
-		}
+			img{
+				align-self: center;
+				margin-top: -85px;
+				margin-bottom: 35px;
+				width: 70px;
+				
+			}
+		
 		
     }
   }

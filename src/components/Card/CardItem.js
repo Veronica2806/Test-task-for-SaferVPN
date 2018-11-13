@@ -5,6 +5,7 @@ import ArticleTitle from '../Article/ArticleTitle';
 import ArticleImage from "../Article/ArticleImage";
 const CardItem = (props) => (
     <li id={props.id}>
+	
         <ArticleImage
             src={props.src}
         />
@@ -14,6 +15,7 @@ const CardItem = (props) => (
         <ArticleText
             text={props.text}
         />
+	
     </li>
 
 );
