@@ -1,19 +1,20 @@
+$color-shadow:rgba(96,111,148,.2);
 .card-list{
 	
   ul{
 	display: flex;
     justify-content: space-around;
     margin: auto;
-    padding:5em;
+    padding:50px;
 	list-style: none;
 	  
 
     li{
 		
 		background-color: #fff;
-		border-radius: .3rem;
-		box-shadow: 0 1rem 3rem 0 rgba(96,111,148,.2);
-		padding:3em;
+		border-radius: 5px;
+		box-shadow: 0 10px 30px 0 $color-shadow;
+		padding:30px;
 		width: 250px;
 		display: flex;
 		flex-direction: column;
@@ -21,11 +22,16 @@
 		
 			p{
 				color: #536283;
-				font: normal 16px "Open Sans";
+				font-weight: normal;
+				font-size: 16px;
+				font-family: "Open Sans";
 				line-height: 26px;
 			}
 			h1{
-				font: bolder 21px "Arial Black";
+				
+				font-weight: bolder;
+				font-size: 21px;
+				font-family: "Arial Black";
 				color: #3a5ba2;
 				line-height: 31px;
 				
@@ -33,7 +39,6 @@
 			
 			img{
 				align-self: center;
-				margin-top: -85px;
 				margin-bottom: 35px;
 				width: 70px;
 				

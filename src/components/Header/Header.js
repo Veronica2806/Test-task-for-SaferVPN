@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from '../Button';
+import ButtonComponent from '../ButtonComponent';
 
 // @STYLES
 import './Header.scss';
@@ -20,9 +20,9 @@ class Header extends Component {
                     </div>
                 <div>
                     log in
-                    <Button title="request demo" status={true}/>
+                    <ButtonComponent title="request demo" status={true}/>
 
-                    <Button title="start now" status={true}/>
+                    <ButtonComponent title="start now" status={true}/>
 
 
                 </div>

@@ -22,9 +22,9 @@ const CardItem = (props) => (
 
 CardItem.propTypes = {
     id: PropTypes.number.isRequired,
-    src:PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
+    src:PropTypes.string,
+    title: PropTypes.string,
+    text: PropTypes.string
 };
 
 export default CardItem;
