@@ -1,15 +1,15 @@
 import React  from 'react';
 import PropTypes from 'prop-types';
 
-const Button = (props) => (
+const ButtonComponent = (props) => (
 
     <button value={props.status}>{props.title}</button>
 
 );
 
-Button.propTypes = {
+ButtonComponent.propTypes = {
     title: PropTypes.string.isRequired,
     status: PropTypes.bool.isRequired
 };
 
-export default Button;
+export default ButtonComponent;

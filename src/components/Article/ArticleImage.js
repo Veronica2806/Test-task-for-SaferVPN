@@ -2,9 +2,7 @@ import React  from 'react';
 import PropTypes from 'prop-types';
 
 const ArticleImage = (props) => (
-    <div>
-        <img src={props.src}/>
-    </div>
+        <img src={props.src} alt="test" />
 );
 
 ArticleImage.propTypes = {

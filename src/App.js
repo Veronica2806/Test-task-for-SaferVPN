@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-
-//@COMPONENTS
 import NavBarList from './components/NavBar';
-
-//@MOCKS
 import Header from './components/Header';
 import { NavBarItems } from './mocks/NavBarItems';
+import { CardItems } from './mocks/CardItems';
 import Article from './components/Article'
+import CardList from "./components/Card/CardList";
 
 class App extends Component {
   render() {
@@ -21,6 +19,11 @@ class App extends Component {
               />
           </Header>
           <Article/>
+
+          <CardList
+              className="card-list"
+              cardItem={CardItems}
+          />
       </div>
     );
   }
