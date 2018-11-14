@@ -20,9 +20,9 @@ class Header extends Component {
                     </div>
                 <div>
                     log in
-                    <ButtonComponent title="request demo" status={true}/>
+                    <ButtonComponent title="request demo"/>
 
-                    <ButtonComponent title="start now" status={true}/>
+                    <ButtonComponent title="start now"/>
 
 
                 </div>

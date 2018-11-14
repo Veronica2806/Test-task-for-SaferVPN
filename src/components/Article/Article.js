@@ -1,30 +1,52 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import ArticleText from './ArticleText';
 import ArticleTitle from './ArticleTitle';
 import ButtonComponent from '../ButtonComponent';
 import './Article.scss';
 import ArticleImage from "./ArticleImage";
 
-class Article extends Component {
-    render() {
-        return(
-            <div >
+const ArticleContent = (props) => (
+
+            <div id={props.id}>
                 <ArticleTitle
-                title="automatic wi-fi security"
+                    title={props.title}
                 />
                 <ArticleText
-                text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five"
+                    text={props.text}
                 />
-                <ButtonComponent title="start now" status={true}/>
-                <ButtonComponent title="request demo" status={true}/>
-                <ArticleImage src="images/logo.png"/>
+                <ButtonComponent
+                    title="start now"
+                />
+                <ButtonComponent
+                    title="request demo"
+                />
+                <ArticleImage
+                    src={props.src}
+                />
 
             </div>
+        );
+class Article extends Component {
+render() {
+    const { article, className} = this.props;
+    const list =  article ? article.map(item => (
+            <ArticleContent
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                text={item.text}
+                src={item.src}
+            />
         )
+    ) : <div>Article is empty</div>;
+    return (
+        <div className={className}>
 
+                {list}
 
-
-
-    }
+        </div>
+    );
 }
+}
+
 export default Article;
