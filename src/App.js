@@ -7,9 +7,13 @@ import { NavBarItems } from './mocks/NavBarItems';
 import { CardItems } from './mocks/CardItems';
 import {FirstArticle} from "./mocks/FirstArticle";
 import {SecondArticle} from "./mocks/SecondArticle";
+import {FooterItems} from "./mocks/FooterItems";
 import ArticleTitle from "./components/Article/ArticleTitle";
 import ArticleText from "./components/Article/ArticleText";
 import ButtonComponent from "./components/ButtonComponent/ButtonComponent";
+import Footer from "./components/Footer/Footer";
+import FooterList from "./components/Footer/FooterList";
+
 
 
 
@@ -29,7 +33,7 @@ class App extends Component {
               className="first-article-section"
               article={FirstArticle}
           />
-          <div>
+          <div className="smt">
               <ArticleTitle title="How Public Wi-Fi Can Harm Your Business" />
               <ArticleText text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been "/>
           </div>
@@ -41,10 +45,18 @@ class App extends Component {
               className="second-article-section"
               article={SecondArticle}
           />
-          <div>
+          <div className="smt">
               <ArticleTitle title="Lorem Ipsum is simply dummy text of the printing and typesett"/>
               <ButtonComponent title="partner with us"/>
           </div>
+         <Footer
+            className="footer"
+         >
+            <FooterList
+                className="footer-list"
+                footerItems={FooterItems}
+            />
+         </Footer>
       </div>
     );
   }
