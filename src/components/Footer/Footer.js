@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import ButtonComponent from '../ButtonComponent';
 
 // @STYLES
-import './Header.scss';
+import './Footer.scss';
 
-class Header extends Component {
+class Footer extends Component {
     render() {
         const { children, className } = this.props;
         return (
@@ -15,21 +14,16 @@ class Header extends Component {
                         perimeter 81
                     </a>
                 </div>
-                    <div>
-                        {children}
-                    </div>
                 <div>
-                    <p>log in</p>
-                    <ButtonComponent title="request demo"/>
-
-                    <ButtonComponent title="start now"/>
-
-
+                    {children}
+                </div>
+                <div>
+                    <p>Safer Social Ltd. ©2018 | Privacy and Legal </p>
                 </div>
             </div>
         );
     }
 }
 
-export default Header;
+export default Footer;
 
