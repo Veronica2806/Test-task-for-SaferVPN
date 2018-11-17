@@ -1,11 +1,15 @@
 .nav-bar-list {
-  background-color: white;
-  ul {
 
+  ul {
     li {
       list-style: none;
+      display: inline;
+      margin-right: 50px;
+
+
       a {
         text-decoration: none;
+        color:white;
       }
     }
   }

@@ -8,8 +8,8 @@ class Footer extends Component {
         const { children, className } = this.props;
         return (
             <div className={className}>
-                <div>
-                    <a href="#">
+                <div className="header-left">
+                    <a href="http://localhost:3000/">
                         <img src={"images/logo.png"} alt="test"/>
                         perimeter 81
                     </a>
@@ -17,8 +17,8 @@ class Footer extends Component {
                 <div>
                     {children}
                 </div>
-                <div>
-                    <p>Safer Social Ltd. ©2018 | Privacy and Legal </p>
+                <div className="header-right">
+                    <p>Safer Social Ltd. &copy; 2018 | Privacy and Legal </p>
                 </div>
             </div>
         );

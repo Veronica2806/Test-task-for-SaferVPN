@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 
 const ArticleText = (props) => (
 
-        <p>{props.text}</p>
+        <p className={props.className}>{props.text}</p>
 );
 
 ArticleText.propTypes = {
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
+    className: PropTypes.string
 };
 
 export default ArticleText;

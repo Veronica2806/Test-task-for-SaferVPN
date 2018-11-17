@@ -8,14 +8,13 @@ import { CardItems } from './mocks/CardItems';
 import {FirstArticle} from "./mocks/FirstArticle";
 import {SecondArticle} from "./mocks/SecondArticle";
 import {FooterItems} from "./mocks/FooterItems";
+import {TitleWithList} from "./mocks/TitleWithList";
 import ArticleTitle from "./components/Article/ArticleTitle";
 import ArticleText from "./components/Article/ArticleText";
 import ButtonComponent from "./components/ButtonComponent/ButtonComponent";
 import Footer from "./components/Footer/Footer";
 import FooterList from "./components/Footer/FooterList";
-
-
-
+import ColumnList from "./components/Columns/ColumnList";
 
 class App extends Component {
   render() {
@@ -29,31 +28,38 @@ class App extends Component {
                   navListItems={NavBarItems}
               />
           </Header>
-          <Article
-              className="first-article-section"
-              article={FirstArticle}
-          />
-          <div className="smt">
-              <ArticleTitle title="How Public Wi-Fi Can Harm Your Business" />
-              <ArticleText text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been "/>
+          <div className="content">
+              <Article
+                  className="first-article-section"
+                  article={FirstArticle}
+              />
+              <div className="text-section">
+                  <ArticleTitle title="How Public Wi-Fi Can Harm Your Business" className="section-title" />
+                  <ArticleText text="Wi-Fi hotspots can be a dangerous place for business employees, resulting in the theft of private business data and breaches of compliance."
+                                className="section-text"
+                  />
+
+                  <img src="./images/line2.png" alt="line"/>
+              </div>
+              <CardList
+                  className="card-list"
+                  cardItem={CardItems}
+              />
+              <Article
+                  className="second-article-section"
+                  article={SecondArticle}
+              />
+              <div className="text-section">
+                  <ArticleTitle  className="section-title text-white" title="Lorem Ipsum is simply dummy text of the printing and typesett"/>
+                  <ButtonComponent title="Partner with us" className="request-demo-btn text-blue"/>
+              </div>
           </div>
-          <CardList
-              className="card-list"
-              cardItem={CardItems}
-          />
-          <Article
-              className="second-article-section"
-              article={SecondArticle}
-          />
-          <div className="smt">
-              <ArticleTitle title="Lorem Ipsum is simply dummy text of the printing and typesett"/>
-              <ButtonComponent title="partner with us"/>
-          </div>
+          <ColumnList columnItems={TitleWithList} className="columns"/>
          <Footer
-            className="footer"
+            className="main-header main-footer"
          >
             <FooterList
-                className="footer-list"
+                className="nav-bar-list"
                 footerItems={FooterItems}
             />
          </Footer>

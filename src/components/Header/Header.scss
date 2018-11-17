@@ -1,3 +1,35 @@
 .main-header {
-  background-color: rebeccapurple;
-}
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  padding: 40px 10px;
+  font-size:18px;
+  font-family: 'Rijdhani-Semibold', sans-serif;
+
+    a{
+      text-decoration: none;
+      color:white;
+    }
+    .header-left{
+        a{
+          width: 140px;
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+    }
+    .header-right {
+      display: flex;
+      width: 350px;
+      justify-content: space-between;
+
+        .transparent-button {
+          background-color: black;
+        }
+    }
+
+  }
+
