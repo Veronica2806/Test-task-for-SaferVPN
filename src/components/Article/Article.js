@@ -28,6 +28,7 @@ const ArticleContent = (props) => (
                 </div>
             </div>
         );
+
 ArticleContent.propTypes = {
     id: PropTypes.number,
     title: PropTypes.string,
@@ -35,13 +36,7 @@ ArticleContent.propTypes = {
     articleType: PropTypes.string,
     src: PropTypes.string
 };
-ArticleContent.defaultProps = {
-    id: 0,
-    title: '',
-    text: '',
-    articleType: '',
-    src: ''
-};
+
 class Article extends Component {
 
     static propTypes = {

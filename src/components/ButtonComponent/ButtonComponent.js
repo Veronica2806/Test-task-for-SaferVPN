@@ -16,4 +16,5 @@ ButtonComponent.defaultProps = {
     hide: false,
     className: ''
 };
+
 export default ButtonComponent;

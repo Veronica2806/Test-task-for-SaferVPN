@@ -51,7 +51,8 @@ class App extends Component {
               />
               <div className="text-section">
                   <ArticleTitle  className="section-title text-white" title="Interested in white-labeling this innovative solution?"/>
-                  <ButtonComponent title="Partner with us" className="partner-with-us-btn"/>
+                 <ButtonComponent title="Partner with us" className="partner-with-us-btn"/>
+
               </div>
           </div>
           <ColumnList columnItems={TitleWithList} className="columns"/>

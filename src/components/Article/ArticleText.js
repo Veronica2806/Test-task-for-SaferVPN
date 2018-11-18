@@ -10,6 +10,7 @@ ArticleText.propTypes = {
     text: PropTypes.string.isRequired,
     className: PropTypes.string
 };
+
 ArticleText.default = {
     text: '',
     className: ''

@@ -11,9 +11,11 @@ ArticleTitle.propTypes = {
     title: PropTypes.string.isRequired,
     className:PropTypes.string
 };
+
 ArticleTitle.defaultTypes = {
     title: '',
     className:''
+
 };
 
 export default ArticleTitle;

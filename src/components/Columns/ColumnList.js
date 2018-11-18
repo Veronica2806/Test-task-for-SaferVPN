@@ -8,7 +8,7 @@ class ColumnList extends Component {
 
     static propTypes = {
         columnItems: PropTypes.array.isRequired,
-        className: PropTypes.string
+        FooterItems: PropTypes.array.isRequired,
     };
     static defaultProps = { FooterItems: [] };
 
