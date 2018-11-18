@@ -8,5 +8,8 @@ const ArticleImage = (props) => (
 ArticleImage.propTypes = {
     src: PropTypes.string.isRequired
 };
+ArticleImage.defaultProps = {
+    src: ''
+};
 
 export default ArticleImage;

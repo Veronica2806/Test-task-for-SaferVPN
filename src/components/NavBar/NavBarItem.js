@@ -12,6 +12,11 @@ NavBarItem.propTypes = {
     title: PropTypes.string.isRequired,
     href: PropTypes.string.isRequired
 };
+NavBarItem.defaultTypes = {
+    id: '0',
+    title: '',
+    href: '#'
+};
 
 export default NavBarItem;
 

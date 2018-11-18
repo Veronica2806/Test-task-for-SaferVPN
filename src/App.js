@@ -50,8 +50,9 @@ class App extends Component {
                   article={SecondArticle}
               />
               <div className="text-section">
-                  <ArticleTitle  className="section-title text-white" title="Lorem Ipsum is simply dummy text of the printing and typesett"/>
-                  <ButtonComponent title="Partner with us" className="request-demo-btn text-blue"/>
+                  <ArticleTitle  className="section-title text-white" title="Interested in white-labeling this innovative solution?"/>
+                 <ButtonComponent title="Partner with us" className="partner-with-us-btn"/>
+
               </div>
           </div>
           <ColumnList columnItems={TitleWithList} className="columns"/>

@@ -2,8 +2,14 @@ import React, { Component } from 'react';
 
 // @STYLES
 import './Footer.scss';
+import PropTypes from "prop-types";
 
 class Footer extends Component {
+    static propTypes = {
+        children: PropTypes.array.isRequired,
+        className: PropTypes.string
+    };
+    static defaultProps = { children: [] };
     render() {
         const { children, className } = this.props;
         return (

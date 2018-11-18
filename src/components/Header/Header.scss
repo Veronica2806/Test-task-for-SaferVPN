@@ -14,7 +14,6 @@
     }
     .header-left{
         a{
-          width: 140px;
           display:flex;
           align-items: center;
           justify-content: space-between;
@@ -23,7 +22,8 @@
     }
     .header-right {
       display: flex;
-      width: 350px;
+      width: 25%;
+
       justify-content: space-between;
 
         .transparent-button {
@@ -32,4 +32,21 @@
     }
 
   }
+
+@media all and (max-width: 1024px) {
+  .main-header{
+    flex-direction: column;
+    .nav-bar{
+      order:2;
+    }
+    .header-left{
+      order:1;
+      margin-bottom: 20px;
+    }
+    .header-right{
+      width:50%;
+      order:1;
+    }
+  }
+}
 

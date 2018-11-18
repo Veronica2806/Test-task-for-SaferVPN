@@ -11,4 +11,8 @@ ArticleText.propTypes = {
     className: PropTypes.string
 };
 
+ArticleText.default = {
+    text: '',
+    className: ''
+};
 export default ArticleText;

@@ -4,6 +4,7 @@ import ArticleTitle from './ArticleTitle';
 import ButtonComponent from '../ButtonComponent';
 import './Article.scss';
 import ArticleImage from "./ArticleImage";
+import PropTypes from 'prop-types';
 
 const ArticleContent = (props) => (
             <div id={props.id} className="ArticleContent">
@@ -28,7 +29,22 @@ const ArticleContent = (props) => (
             </div>
         );
 
+ArticleContent.propTypes = {
+    id: PropTypes.number,
+    title: PropTypes.string,
+    text: PropTypes.string,
+    articleType: PropTypes.string,
+    src: PropTypes.string
+};
+
 class Article extends Component {
+
+    static propTypes = {
+        article: PropTypes.array.isRequired,
+        className: PropTypes.string
+    };
+    static defaultProps = { article: [] };
+
 render() {
     const { article, className} = this.props;
     const list =  article ? article.map(item => (

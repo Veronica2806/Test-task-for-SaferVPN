@@ -12,4 +12,10 @@ ArticleTitle.propTypes = {
     className:PropTypes.string
 };
 
+ArticleTitle.defaultTypes = {
+    title: '',
+    className:''
+
+};
+
 export default ArticleTitle;

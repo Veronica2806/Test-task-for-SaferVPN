@@ -12,6 +12,11 @@ FooterItem.propTypes = {
     href: PropTypes.string.isRequired,
     src: PropTypes.string.isRequired
 };
+FooterItem.default = {
+    id: '0',
+    href: '#',
+    src: ''
+};
 
 export default FooterItem;
 
