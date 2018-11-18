@@ -1,27 +1,27 @@
 export const FooterItems = [
     {
         id: 0,
-        src: "images/logo.png",
+        src: "images/f.png",
         href:"#"
     },
     {
         id: 1,
-        src: "images/logo.png",
+        src: "images/tw.png",
         href:"#"
     },
     {
         id: 2,
-        src: "images/logo.png",
+        src: "images/y.png",
         href:"#"
     },
     {
         id: 3,
-        src: "images/logo.png",
+        src: "images/in.png",
         href:"#"
     },
     {
         id: 4,
-        src: "images/logo.png",
+        src: "images/g.png",
         href:"#"
     },
 ];

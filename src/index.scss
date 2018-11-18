@@ -1,3 +1,45 @@
+@font-face {
+	font-family: Rijdhani;
+src: url("./fonts/rajdhani-bold.ttf");
+}
+@font-face {
+	font-family: Rijdhani-Semibold;
+	src: url("./fonts/rajdhani-semibold.ttf");
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+button{
+	outline: none;
+	cursor: pointer;
+}
 body{
-	background-color: #f6faff;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-image: url("./images/background.png");
+	background-position: top;
+	background-size: 110% 100%;
+}
+.text-section{
+	width:700px;
+	margin:0 auto;
+	text-align: center;
+	padding-bottom: 40px;
+	color:#3a5ba2;
+	.section-title{
+		font-family: 'Rijdhani', sans-serif;
+	}
+	.section-text{
+		font-family: 'Rijdhani-Semibold', sans-serif;
+	}
+	.text-white{
+		color:white;
+	}
+	.request-demo-btn{
+		background-color: white;
+	}
+	.text-blue{
+		color:#3e88ff;
+	}
 }

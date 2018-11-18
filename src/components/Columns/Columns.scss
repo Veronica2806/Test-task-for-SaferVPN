@@ -1,0 +1,43 @@
+.columns{
+  margin: 0 auto;
+  max-width: 60%;
+  color:white;
+  .columnsList{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    padding-left:0;
+    .column{
+      width: 20%;
+      .columnTitle{
+        font-family: 'Rijdhani', sans-serif;
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+      .columnList{
+        list-style:none;
+        padding-left: 0;
+        li{
+          line-height: 30px;
+          a{
+            text-decoration: none;
+            color:white;
+            font-family: 'Open Sans', sans-serif;
+
+          }
+        }
+      }
+    }
+  }
+}
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .columns {
+    max-width: 85%;
+  }
+
+}
+@media all and (max-width: 1024px) {
+  .columnList{
+    display:none;
+  }
+}

@@ -1,8 +1,10 @@
 export const FirstArticle = [
     {
         id: 0,
-        src: "images/logo.png",
+        type: "firstArticle",
+        src: "images/firstArticleImage.png",
         title: "Wi-Fi Hotspots Lack Encryption",
-        text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five "
+        text: "Perimeter 81 offers an advanced security feature that proactively protects your team members - whether they are traveling for business or working from a local cafe - from dangerous public Wi-Fi threats.\n" +
+"Our patent-pending technology automatically secures your Wi-Fi connection. Learn how Perimeter 81 can keep your company data protected. "
     }
     ];
