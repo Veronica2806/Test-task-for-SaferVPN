@@ -78,3 +78,18 @@ $color-shadow:rgba(96,111,148,.2);
   }
 
 }
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+
+  .first-article-section, .second-article-section {
+
+    .ArticleContent {
+      max-width: 85%;
+      display: flex;
+      .article-right{
+
+      }
+
+    }
+  }
+
+}

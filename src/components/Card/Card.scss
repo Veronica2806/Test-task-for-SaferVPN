@@ -63,3 +63,13 @@ $color-shadow:rgba(96,111,148,.2);
 		}
 	}
 }
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+	.card-list {
+		max-width: 85%;
+		ul li{
+			width:300px;
+		}
+	}
+
+}

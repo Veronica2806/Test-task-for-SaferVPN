@@ -30,3 +30,14 @@
     }
   }
 }
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+  .columns {
+    max-width: 85%;
+  }
+
+}
+@media all and (max-width: 1024px) {
+  .columnList{
+    display:none;
+  }
+}
