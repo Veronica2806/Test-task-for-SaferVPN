@@ -3,8 +3,15 @@ import ButtonComponent from '../ButtonComponent';
 
 // @STYLES
 import './Header.scss';
+import PropTypes from "prop-types";
 
 class Header extends Component {
+
+    static propTypes = {
+        children: PropTypes.array.isRequired,
+        className: PropTypes.string
+    };
+    static defaultProps = { children: [] };
     render() {
         const { children, className } = this.props;
         return (
@@ -15,7 +22,7 @@ class Header extends Component {
                         <span>perimeter 81</span>
                     </a>
                 </div>
-                    <div>
+                    <div className="nav-bar">
                         {children}
                     </div>
                 <div className="header-right">

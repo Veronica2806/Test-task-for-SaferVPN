@@ -11,5 +11,9 @@ ButtonComponent.propTypes = {
     className: PropTypes.string
 };
 
-
+ButtonComponent.defaultProps = {
+    title: '',
+    hide: false,
+    className: ''
+};
 export default ButtonComponent;

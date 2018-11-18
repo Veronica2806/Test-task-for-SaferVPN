@@ -7,7 +7,7 @@ import './Columns.scss';
 class ColumnList extends Component {
 
     static propTypes = {
-        FooterItems: PropTypes.array.isRequired,
+        columnItems: PropTypes.array.isRequired,
         className: PropTypes.string
     };
     static defaultProps = { FooterItems: [] };

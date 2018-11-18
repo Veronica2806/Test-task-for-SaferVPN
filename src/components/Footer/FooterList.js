@@ -10,7 +10,7 @@ class FooterList extends Component {
         footerItems: PropTypes.array.isRequired,
         className: PropTypes.string
     };
-    static defaultProps = { navListItems: [] };
+    static defaultProps = { footerItems: [] };
 
     render() {
         const { footerItems, className } = this.props;

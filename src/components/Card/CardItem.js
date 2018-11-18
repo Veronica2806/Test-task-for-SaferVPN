@@ -26,5 +26,11 @@ CardItem.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string
 };
+CardItem.defaultTypes = {
+    id: '0',
+    src:'',
+    title: '',
+    text:''
+};
 
 export default CardItem;
